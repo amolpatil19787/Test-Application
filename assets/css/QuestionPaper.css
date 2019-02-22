@@ -1,0 +1,45 @@
+.QuestionPaperName
+{
+	font-size:38px;
+	text-transform:capitalize;
+}
+.Question
+{
+	width:68%;
+	float:left;
+	margin-left:2%;
+}
+.Marks
+{
+	width:10% !important;
+	float:left;
+	padding:5px 0px;
+	margin-left:5%;
+}
+.Image
+{
+	width:98%;
+	float:left;
+	margin-top:5px;
+	margin-left:2%;
+}
+.Answers
+{
+	width:68%;
+	float:left;
+	margin-left:5%;
+	text-align:justify;
+	margin-top:10px;
+}
+
+.homebtn
+{
+    background-color:#0071BC;
+    color:white;
+}
+.homebtn:hover
+{
+   background-color:#23527c !important;
+   color:white;
+   
+}

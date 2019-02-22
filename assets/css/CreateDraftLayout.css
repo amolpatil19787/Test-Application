@@ -1,0 +1,35 @@
+.tablelayout
+{
+    margin-left:3%;
+    font-size:14px;
+}
+.labels
+{
+     width:32%;
+}
+.QuePapername
+{
+     border:1px solid lightgray; 
+     padding:1%;
+     width:58%;
+}
+.PaperData
+{
+    border:1px solid lightgray;
+    margin-top:10px;
+    width:58%;
+    padding:1%;
+}
+.OutOfMarks
+{
+    width:26%;
+    border:1px solid lightgray;
+    padding:1%;
+    margin-top:10px;
+}
+.TotalMarkss
+{
+    border:1px solid lightgray;
+    width:27%;
+    padding:1%;
+}
