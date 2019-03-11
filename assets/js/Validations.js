@@ -154,7 +154,6 @@
 				        	    title: '',
                          content: 'Please fill the captcha!'
                     });
-                     // alert("You need to fill the captcha");
                           return false;
                   }
                   
@@ -164,7 +163,7 @@
                   
                   $.ajax({
 					type: "post",
-         				url:"http://www.test.acquiscent.com/Questions/AdminData", //the page containing php script
+         				url:"http://www.test.acquiscent.com/Questions/AdminData", 
            				data: {email:email,adminid:adminid},
             				success:function(data)
 					        {
@@ -196,17 +195,16 @@
 					                   
 					                  $.ajax({
 		                    			type: "post",
-         			                	url:"http://www.test.acquiscent.com/Questions/UserRegistration", //the page containing php script
+         			                	url:"http://www.test.acquiscent.com/Questions/UserRegistration", 
                            				data: {email:email,adminid:adminid,btnid:btnid},
             	            			success:function(data)
 					                    {
-					                     //   alert('hello');
+					                    
 					                     var msgbody="<html><div style='background-color:lightgray;padding:5%;width:50%;margin:20px 20%;'><h2>Hello "+email+",</h2><h3>Thanks for contacting regarding to forgot password,</h3><h3>Click here to <a href='https://www.test.acquiscent.com//Questions/ResetPassword?UserID="+data+"'><b>Reset Password</b></a></h3></div></html>";
 					                        
 					                        $.ajax({
                                        type: "POST",
-                                          url:"use your mail api here", 
-                                          //the page containing php script
+                                          url:"use your mail api here",
                                           success:function()
                                          {
                                                  $.confirm({
@@ -235,14 +233,14 @@
                                     	},
 		                    			 error:function()
         			                    {
-        		            	         	 //alert('fail');
+        		            	         	 alert('fail');
         			       	            }
 				                    	});
 					               }
 				        	},
 					 error:function()
         			        {
-        			         	 //alert('fail');
+        			         	 alert('fail');
         			       	 }
 					});
 			}
@@ -283,7 +281,6 @@
 				        	    title: '',
                          content: 'Please fill the captcha!'
                     });
-                     // alert("You need to fill the captcha");
                           return false;
             } 
             else
@@ -320,7 +317,7 @@
                                 
                                 $.ajax({
                                 type: "post",
-                                url:"use your mail api here", //the page containing php script
+                                url:"use your mail api here", 
 
                                     success:function()
                                     {
@@ -355,7 +352,7 @@
                                 
                                 $.ajax({
                                 type: "post",
-                                url:"use your mail api here", //the page containing php script
+                                url:"use your mail api here",
 
                                     success:function()
                                     {
@@ -390,8 +387,7 @@
                                 
                                 $.ajax({
                                 type: "post",
-                                url:"use your mail api here", //the page containing php script
-
+                                url:"use your mail api here", 
                                     success:function()
                                     {
                                      $.confirm({
@@ -425,7 +421,7 @@
                                 
                                 $.ajax({
                                 type: "post",
-                                url:"use your mail api here", //the page containing php script
+                                url:"use your mail api here", 
 
                                     success:function()
                                     {
@@ -521,11 +517,11 @@
 		             {
 		            $.ajax({
 					type: "post",
-         				url:"https://www.test.acquiscent.com/Questions/ResetUserPassword", //the page containing php script
+         				url:"https://www.test.acquiscent.com/Questions/ResetUserPassword", 
            				data: {btnid:btnid,UserID:UserID,pass:pass},
             				success:function(data)
 				        	{
-				        	 //   alert(data);
+				        	
 				        	    
 					           $.confirm({
                                 title: '',
@@ -541,7 +537,7 @@
 					},
 					 error:function()
         			        {
-        			         	 //alert('fail');
+        			         	 alert('fail');
         			       	 }
 					});
 		             }
@@ -550,11 +546,11 @@
 		             {
 		                    $.ajax({
 			        		type: "post",
-         		    		url:"https://www.test.acquiscent.com/Questions/ResetExamCoPassword", //the page containing php script
+         		    		url:"https://www.test.acquiscent.com/Questions/ResetExamCoPassword", 
            		    		data: {btnid:btnid,ExamCoID:ExamCoID,pass:pass},
             				success:function(data)
 				        	{
-				        	 //   alert(data);
+				        	
 				        	    
 					           $.confirm({
                                 title: '',
@@ -570,7 +566,7 @@
 				        	},
 				        	 error:function()
         			        {
-        			         	 //alert('fail');
+        			         	 alert('fail');
         			       	 }
 				    	});
 		             }
@@ -578,11 +574,11 @@
 		             {
 		                    $.ajax({
 			        		type: "post",
-         		    		url:"https://www.test.acquiscent.com/Questions/ResetAdminPassword", //the page containing php script
+         		    		url:"https://www.test.acquiscent.com/Questions/ResetAdminPassword", 
            		    		data: {btnid:btnid,AdminID:AdminID,pass:pass},
             				success:function(data)
 				        	{
-				        	 //   alert(data);
+				        	
 				        	    
 					           $.confirm({
                                 title: '',
@@ -598,7 +594,7 @@
 				        	},
 				        	 error:function()
         			        {
-        			         	 //alert('fail');
+        			         	 alert('fail');
         			       	 }
 				    	});
 		             }
@@ -606,11 +602,11 @@
 		             {
 		                 $.ajax({
 			        		type: "post",
-         		    		url:"https://www.test.acquiscent.com/Questions/ResetSuperAdminPassword", //the page containing php script
+         		    		url:"https://www.test.acquiscent.com/Questions/ResetSuperAdminPassword",
            		    		data: {btnid:btnid,SuperAdminID:SuperAdminID,pass:pass},
             				success:function(data)
 				        	{
-				        	 //   alert(data);
+				        	
 				        	    
 					           $.confirm({
                                 title: '',
@@ -626,7 +622,7 @@
 				        	},
 				        	 error:function()
         			        {
-        			         	 //alert('fail');
+        			         	 alert('fail');
         			       	 }
 				    	});
 		             }
@@ -643,7 +639,7 @@
 		        var AdminID=$('#userid').val();
 		        var pass=$('#pass').val();
 		        
-		      //  alert(UserID);
+		      
 		        if($('#pass').val()=="")
 		        {
 		                           $('#pass').focus();
@@ -676,11 +672,11 @@
 		               
 		            $.ajax({
 					type: "post",
-         				url:"http://www.test.acquiscent.com/Questions/ResetPasswordA", //the page containing php script
+         				url:"http://www.test.acquiscent.com/Questions/ResetPasswordA", 
            				data: {btnid:btnid,AdminID:AdminID,pass:pass},
             				success:function(data)
 				        	{
-				        	 //   alert(data);
+				        	 
 				        	    
 					           $.confirm({
                                 title: '',
@@ -696,7 +692,7 @@
 					},
 					 error:function()
         			        {
-        			         	 //alert('fail');
+        			         	 alert('fail');
         			       	 }
 					});
 		            
@@ -755,11 +751,11 @@
                     
                         $.ajax({
 		    			type: "post",
-         				url:"http://www.test.acquiscent.com/Questions/SaveAdminDetails", //the page containing php script
+         				url:"http://www.test.acquiscent.com/Questions/SaveAdminDetails", 
            				data: {Email:Email,DisplayName:DisplayName,noOfUsers:noOfUsers},
             				success:function(data)
 				        	{
-				        	   // alert(data);
+				        	  
 				        	  var arr=JSON.parse(data);
 				        	    
 				        	    
@@ -774,7 +770,7 @@
 				                          title: '',
                                          content: 'This email id is already present!'
                                     });
-                                       //  return false;
+                                       
 					              }
 					              else
 					              {
@@ -783,7 +779,7 @@
 					                  $.ajax({
                                             type: "POST",
                                               url:"use your mail api here", 
-                                          //the page containing php script
+                                          
                                              success:function()
                                             {
                                                 $.confirm({
@@ -814,7 +810,7 @@
 				        	,
 				        	 error:function()
         			        {
-        			         	 //alert('fail');
+        			         	 alert('fail');
         			       	 }
 					});
                 }
@@ -853,11 +849,11 @@
                     
                     $.ajax({
 					type: "post",
-         				url:"http://www.test.acquiscent.com/Questions/SaveExamCoordinatorData", //the page containing php script
+         				url:"http://www.test.acquiscent.com/Questions/SaveExamCoordinatorData", 
            				data: {email:email,displayExamCoName:displayExamCoName,adminid:adminid},
             				success:function(data)
 				        	{
-					           //alert(data);
+					          
 					           
 					            var arr=JSON.parse(data);
 					            
@@ -878,7 +874,7 @@
 					                  $.ajax({
                                             type: "POST",
                                               url:"use your mail api here", 
-                                          //the page containing php script
+                                         
                                              success:function()
                                             {
                                                 $.confirm({
@@ -909,7 +905,7 @@
 				        	},
 					         error:function()
         			        {
-        			         	 //alert('fail');
+        			         	 alert('fail');
         			       	 }
 					});
                 }
