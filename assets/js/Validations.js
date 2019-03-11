@@ -205,7 +205,7 @@
 					                        
 					                        $.ajax({
                                        type: "POST",
-                                          url:"http://autokattawebapi.us-east-2.elasticbeanstalk.com//api/AutoKattaWebService/MailCode?ToMail="+email+"&Subject=Reset Password&msgBody="+msgbody+"&temp=&fileName=&Keyword=", 
+                                          url:"use your mail api here", 
                                           //the page containing php script
                                           success:function()
                                          {
@@ -320,7 +320,7 @@
                                 
                                 $.ajax({
                                 type: "post",
-                                url:"http://autokattawebapi.us-east-2.elasticbeanstalk.com//api/AutoKattaWebService/MailCode?ToMail="+AdminEmailID+"&Subject=Reset Password&msgBody="+Adminmsgbody+"&temp=&fileName=&Keyword=", //the page containing php script
+                                url:"use your mail api here", //the page containing php script
 
                                     success:function()
                                     {
@@ -355,7 +355,7 @@
                                 
                                 $.ajax({
                                 type: "post",
-                                url:"http://autokattawebapi.us-east-2.elasticbeanstalk.com//api/AutoKattaWebService/MailCode?ToMail="+UserEmailID+"&Subject=Reset Password&msgBody="+Usermsgbody+"&temp=&fileName=&Keyword=", //the page containing php script
+                                url:"use your mail api here", //the page containing php script
 
                                     success:function()
                                     {
@@ -390,7 +390,7 @@
                                 
                                 $.ajax({
                                 type: "post",
-                                url:"http://autokattawebapi.us-east-2.elasticbeanstalk.com//api/AutoKattaWebService/MailCode?ToMail="+ExamcoEmailID+"&Subject=Reset Password&msgBody="+ExamComsgbody+"&temp=&fileName=&Keyword=", //the page containing php script
+                                url:"use your mail api here", //the page containing php script
 
                                     success:function()
                                     {
@@ -425,7 +425,7 @@
                                 
                                 $.ajax({
                                 type: "post",
-                                url:"http://autokattawebapi.us-east-2.elasticbeanstalk.com//api/AutoKattaWebService/MailCode?ToMail="+SuperAdminEmailID+"&Subject=Reset Password&msgBody="+SuperAdminmsgbody+"&temp=&fileName=&Keyword=", //the page containing php script
+                                url:"use your mail api here", //the page containing php script
 
                                     success:function()
                                     {
@@ -782,7 +782,7 @@
 					                  
 					                  $.ajax({
                                             type: "POST",
-                                              url:"http://autokattawebapi.us-east-2.elasticbeanstalk.com//api/AutoKattaWebService/MailCode?ToMail="+Email+"&Subject=Reset Password&msgBody="+msgbody+"&temp=&fileName=&Keyword=", 
+                                              url:"use your mail api here", 
                                           //the page containing php script
                                              success:function()
                                             {
@@ -877,7 +877,7 @@
 					                  
 					                  $.ajax({
                                             type: "POST",
-                                              url:"http://autokattawebapi.us-east-2.elasticbeanstalk.com//api/AutoKattaWebService/MailCode?ToMail="+email+"&Subject=Reset Password&msgBody="+msgbody+"&temp=&fileName=&Keyword=", 
+                                              url:"use your mail api here", 
                                           //the page containing php script
                                              success:function()
                                             {
